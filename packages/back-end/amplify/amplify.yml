@@ -12,7 +12,7 @@ applications:
       phases:
         build:
           commands:
-            - npx nx build amplify
+            - mkdir ./dist && touch index.html
       artifacts:
         baseDirectory: dist
         files:
