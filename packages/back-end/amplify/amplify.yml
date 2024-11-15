@@ -20,5 +20,5 @@ applications:
       cache:
        paths:
          - .npm/**/*
-     buildPath: /
+      buildPath: /
     
