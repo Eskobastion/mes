@@ -13,9 +13,9 @@
     "@angular/platform-browser": "~18.2.0",
     "@angular/platform-browser-dynamic": "~18.2.0",
     "@angular/router": "~18.2.0",
+    "aws-amplify": "~6.8.2",
     "rxjs": "~7.8.0",
-    "zone.js": "~0.14.3",
-    "aws-amplify": "~6.8.2"
+    "zone.js": "~0.14.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~18.2.0",
@@ -45,6 +45,10 @@
     "@types/node": "18.16.9",
     "@typescript-eslint/utils": "^8.0.0",
     "angular-eslint": "^18.3.0",
+    "aws-cdk": "^2.166.0",
+    "aws-cdk-lib": "^2.167.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.24.0",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-playwright": "^1.6.2",
@@ -57,12 +61,9 @@
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
+    "tsx": "^4.19.2",
     "typescript": "~5.5.2",
-    "typescript-eslint": "^8.0.0",
-    "aws-cdk": "^2.166.0",
-    "aws-cdk-lib": "^2.167.0",
-    "constructs": "^10.4.2",
-    "esbuild": "^0.24.0",
-    "tsx": "^4.19.2"
-  }
+    "typescript-eslint": "^8.0.0"
+  },
+  "packageManager": "npm@10.9.0+sha512.65a9c38a8172948f617a53619762cd77e12b9950fe1f9239debcb8d62c652f2081824b986fee7c0af6c0a7df615becebe4bf56e17ec27214a87aa29d9e038b4b"
 }
