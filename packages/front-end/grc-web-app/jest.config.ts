@@ -1,8 +1,8 @@
 export default {
-  displayName: 'grc',
-  preset: '../../jest.preset.js',
+  displayName: 'grc-web-app',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/grc',
+  coverageDirectory: '../../../coverage/packages/front-end/grc-web-app',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

@@ -1,27 +1,27 @@
 {
-  "name": "grc",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "grc-web-app",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/grc/src",
+  "sourceRoot": "packages/front-end/grc-web-app/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/grc",
-        "index": "apps/grc/src/index.html",
-        "browser": "apps/grc/src/main.ts",
+        "outputPath": "dist/packages/front-end/grc-web-app",
+        "index": "packages/front-end/grc-web-app/src/index.html",
+        "browser": "packages/front-end/grc-web-app/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/grc/tsconfig.app.json",
+        "tsConfig": "packages/front-end/grc-web-app/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/grc/public"
+            "input": "packages/front-end/grc-web-app/public"
           }
         ],
-        "styles": ["apps/grc/src/styles.css"],
+        "styles": ["packages/front-end/grc-web-app/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -52,10 +52,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "grc:build:production"
+          "buildTarget": "grc-web-app:build:production"
         },
         "development": {
-          "buildTarget": "grc:build:development"
+          "buildTarget": "grc-web-app:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -63,7 +63,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "grc:build"
+        "buildTarget": "grc-web-app:build"
       }
     },
     "lint": {
@@ -73,15 +73,15 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/grc/jest.config.ts"
+        "jestConfig": "packages/front-end/grc-web-app/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "grc:build",
+        "buildTarget": "grc-web-app:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/grc/browser",
+        "staticFilePath": "dist/packages/front-end/grc-web-app/browser",
         "spa": true
       }
     }

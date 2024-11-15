@@ -14,12 +14,14 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Welcome grc');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Welcome grc-web-app'
+    );
   });
 
-  it(`should have as title 'grc'`, () => {
+  it(`should have as title 'grc-web-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('grc');
+    expect(app.title).toEqual('grc-web-app');
   });
 });

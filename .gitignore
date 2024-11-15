@@ -42,3 +42,9 @@ Thumbs.db
 .nx/workspace-data
 
 .angular
+
+.amplify
+
+.amplify
+amplify_outputs*
+amplifyconfiguration*
